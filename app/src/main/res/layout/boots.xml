@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="7dp"
+    app:cardBackgroundColor="#6DFF5722"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/boot_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/boot_img"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintLeft_toRightOf="@id/boot_qty"
+        app:layout_constraintTop_toTopOf="@id/boot_qty" />
+
+    <TextView
+        android:id="@+id/boot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/boot_qty"
+        app:layout_constraintTop_toBottomOf="@id/boot_img" />
+
+    <TextView
+        android:id="@+id/boot_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/boot_qty"
+        app:layout_constraintTop_toBottomOf="@id/boot_name" />
+
+    <TextView
+        android:id="@+id/boot_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/boot_qty"
+        app:layout_constraintTop_toBottomOf="@id/boot_type" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shopping_cart"
+        app:layout_constraintBottom_toBottomOf="@id/boot_price"
+        app:layout_constraintRight_toRightOf="@id/boot_img" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
